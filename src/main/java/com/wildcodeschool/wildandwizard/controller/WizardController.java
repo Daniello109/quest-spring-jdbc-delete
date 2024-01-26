@@ -11,7 +11,7 @@ public class WizardController {
 
     private WizardRepository repository = new WizardRepository();
 
-    @GetMapping("/wizard/delete")
+    @GetMapping("/wizard/delete") //http://localhost:8080/wizard/delete?id=(id number)
     public String deleteWizard(@RequestParam Long id) {
 
         repository.deleteById(id);
